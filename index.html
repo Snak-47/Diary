@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magzie</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(62, 7, 7), rgb(255, 0, 0));
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: gradientAnimation 20s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(128, 0, 0)); /* Red to Dark Red */
+            }
+            2% {
+                background: linear-gradient(to bottom, rgb(250, 20, 20), rgb(120, 0, 0));
+            }
+            4% {
+                background: linear-gradient(to bottom, rgb(240, 40, 40), rgb(110, 0, 0));
+            }
+            6% {
+                background: linear-gradient(to bottom, rgb(230, 60, 60), rgb(100, 0, 0));
+            }
+            8% {
+                background: linear-gradient(to bottom, rgb(220, 80, 80), rgb(90, 0, 0));
+            }
+            10% {
+                background: linear-gradient(to bottom, rgb(210, 100, 100), rgb(80, 0, 0));
+            }
+            12% {
+                background: linear-gradient(to bottom, rgb(200, 120, 120), rgb(70, 0, 0));
+            }
+            14% {
+                background: linear-gradient(to bottom, rgb(190, 140, 140), rgb(60, 0, 0));
+            }
+            16% {
+                background: linear-gradient(to bottom, rgb(180, 160, 160), rgb(50, 0, 0));
+            }
+            18% {
+                background: linear-gradient(to bottom, rgb(170, 180, 180), rgb(40, 0, 0));
+            }
+            20% {
+                background: linear-gradient(to bottom, rgb(160, 200, 200), rgb(30, 0, 0));
+            }
+            22% {
+                background: linear-gradient(to bottom, rgb(150, 220, 220), rgb(20, 0, 0));
+            }
+            24% {
+                background: linear-gradient(to bottom, rgb(140, 240, 240), rgb(10, 0, 0));
+            }
+            26% {
+                background: linear-gradient(to bottom, rgb(130, 255, 255), rgb(0, 0, 0));
+            }
+            28% {
+                background: linear-gradient(to bottom, rgb(120, 255, 255), rgb(0, 0, 10));
+            }
+            30% {
+                background: linear-gradient(to bottom, rgb(110, 255, 255), rgb(0, 0, 20));
+            }
+            32% {
+                background: linear-gradient(to bottom, rgb(100, 255, 255), rgb(0, 0, 30));
+            }
+            34% {
+                background: linear-gradient(to bottom, rgb(90, 255, 255), rgb(0, 0, 40));
+            }
+            36% {
+                background: linear-gradient(to bottom, rgb(80, 255, 255), rgb(0, 0, 50));
+            }
+            38% {
+                background: linear-gradient(to bottom, rgb(70, 255, 255), rgb(0, 0, 60));
+            }
+            40% {
+                background: linear-gradient(to bottom, rgb(60, 255, 255), rgb(0, 0, 70));
+            }
+            42% {
+                background: linear-gradient(to bottom, rgb(50, 255, 255), rgb(0, 0, 80));
+            }
+            44% {
+                background: linear-gradient(to bottom, rgb(40, 255, 255), rgb(0, 0, 90));
+            }
+            46% {
+                background: linear-gradient(to bottom, rgb(30, 255, 255), rgb(0, 0, 100));
+            }
+            48% {
+                background: linear-gradient(to bottom, rgb(20, 255, 255), rgb(0, 0, 110));
+            }
+            50% {
+                background: linear-gradient(to bottom, rgb(10, 255, 255), rgb(0, 0, 120));
+            }
+            52% {
+                background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(0, 0, 130));
+            }
+            54% {
+                background: linear-gradient(to bottom, rgb(0, 240, 240), rgb(0, 0, 140));
+            }
+            56% {
+                background: linear-gradient(to bottom, rgb(0, 220, 220), rgb(0, 0, 150));
+            }
+            58% {
+                background: linear-gradient(to bottom, rgb(0, 200, 200), rgb(0, 0, 160));
+            }
+            60% {
+                background: linear-gradient(to bottom, rgb(0, 180, 180), rgb(0, 0, 170));
+            }
+            62% {
+                background: linear-gradient(to bottom, rgb(0, 160, 160), rgb(0, 0, 180));
+            }
+            64% {
+                background: linear-gradient(to bottom, rgb(0, 140, 140), rgb(0, 0, 190));
+            }
+            66% {
+                background: linear-gradient(to bottom, rgb(0, 120, 120), rgb(0, 0, 200));
+            }
+            68% {
+                background: linear-gradient(to bottom, rgb(0, 100, 100), rgb(0, 0, 210));
+            }
+            70% {
+                background: linear-gradient(to bottom, rgb(0, 80, 80), rgb(0, 0, 220));
+            }
+            72% {
+                background: linear-gradient(to bottom, rgb(0, 60, 60), rgb(0, 0, 230));
+            }
+            74% {
+                background: linear-gradient(to bottom, rgb(0, 40, 40), rgb(0, 0, 240));
+            }
+            76% {
+                background: linear-gradient(to bottom, rgb(0, 20, 20), rgb(0, 0, 250));
+            }
+            78% {
+                background: linear-gradient(to bottom, rgb(0, 10, 10), rgb(0, 0, 255));
+            }
+            80% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 255));
+            }
+            82% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 0, 255));
+            }
+            84% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(20, 0, 255));
+            }
+            86% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(30, 0, 255));
+            }
+            88% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(40, 0, 255));
+            }
+            90% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(50, 0, 255));
+            }
+            92% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(60, 0, 255));
+            }
+            94% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(70, 0, 255));
+            }
+            96% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(80, 0, 255));
+            }
+            98% {
+                background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(90, 0, 255));
+            }
+            100% {
+                background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(128, 0, 0)); /* Back to Red to Dark Red */
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        a {
+            font-size: 18px;
+            color: #00bcd4;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #860000;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #380505;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to my website!</h2>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1>Why'd you choose to come here?</h1>
+    <h1></h1>
+    <h1>My current projects:</h1>
+    <h1></h1>
+    <h1>A game</h1>
+    <h1></h1>
+    <h1>New game coming!</h1>
+    <a href="https://www.youtube.com/@JezoPeli">My dev diary</a>
+</body>
+</html>
